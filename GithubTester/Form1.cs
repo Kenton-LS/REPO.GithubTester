@@ -27,6 +27,8 @@ namespace GithubTester
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            // Add safety check to ensure input provided by user
+        
             playerName = txtPlayerName.Text;
             dragonName = txtDragonName.Text;
 
