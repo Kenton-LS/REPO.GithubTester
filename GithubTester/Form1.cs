@@ -37,6 +37,12 @@ namespace GithubTester
                 rtbLog.Text = "Player Name: " + playerName +
                                 "\nDragon Name: " + dragonName;
             }
+            else
+            {
+                rtbLog.Text = "You didn't complete your inputs." +
+                                "\nShame on you!" +
+                                "\nHOMELESS MAN NO JUTSU";
+            }
         }
     }
 }
