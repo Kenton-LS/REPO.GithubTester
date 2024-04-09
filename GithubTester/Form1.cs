@@ -29,11 +29,14 @@ namespace GithubTester
         {
             // Add safety check to ensure input provided by user
         
-            playerName = txtPlayerName.Text;
-            dragonName = txtDragonName.Text;
+            if (txtPlayerName.Text != "" && txtDragonName.Text != "")
+            {
+                playerName = txtPlayerName.Text;
+                dragonName = txtDragonName.Text;
 
-            rtbLog.Text = "Player Name: " + playerName +
-                            "\nDragon Name: " + dragonName;
+                rtbLog.Text = "Player Name: " + playerName +
+                                "\nDragon Name: " + dragonName;
+            }
         }
     }
 }
