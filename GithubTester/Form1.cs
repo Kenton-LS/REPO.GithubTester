@@ -12,6 +12,9 @@ namespace GithubTester
 {
     public partial class Form1 : Form
     {
+        string playerName;
+        string dragonName;
+
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +23,15 @@ namespace GithubTester
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            playerName = txtPlayerName.Text;
+            dragonName = txtDragonName.Text;
+
+            rtbLog.Text = "Player Name: " + playerName +
+                            "\nDragon Name: " + dragonName;
         }
     }
 }
